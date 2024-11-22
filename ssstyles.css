@@ -1,0 +1,90 @@
+/* General */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f8f8f8; /* Fondo neutro */
+    color: #333;
+}
+
+/* Navegación */
+nav {
+    background-color: rgba(255, 255, 255, 0.3); /* Fondo transparente */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    padding: 12px 25px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar-brand {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #f5a623;
+    font-size: 1.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Resalta al pasar */
+    transform: scale(1.05);
+}
+
+.navbar .nav-icon {
+    color: #fff;
+    font-size: 1.2em;
+    margin-left: 15px;
+}
+
+/* Estilos para el carrusel */
+#template-mo-zay-hero-carousel {
+    width: 100%;
+    height: 100vh;
+}
+
+.carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Fondo en SVG para cada carrusel */
+.carousel-item:nth-child(1) {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="%23a8e6cf"/><circle cx="400" cy="300" r="150" fill="%2395d1cc"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%235f6f3e" font-size="40" font-family="Arial">Reutiliza bolsas</text></svg>') no-repeat center center;
+    background-size: cover;
+}
+
+.carousel-item:nth-child(2) {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="%23ffd3b6"/><path d="M400,150 Q450,200 500,150 T600,150" fill="none" stroke="%23956d4d" stroke-width="8"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%236e5847" font-size="40" font-family="Arial">Amigos de la naturaleza</text></svg>') no-repeat center center;
+    background-size: cover;
+}
+
+.carousel-item:nth-child(3) {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="%23dcedc1"/><polygon points="400,100 450,200 350,200" fill="%239db87d"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%2347552c" font-size="40" font-family="Arial">Protege el planeta</text></svg>') no-repeat center center;
+    background-size: cover;
+}
+
+/* Control de las flechas del carrusel */
+.carousel-control-prev, .carousel-control-next {
+    font-size: 2em;
+    color: #fff;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    transition: transform 0.3s ease, background 0.3s;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background: rgba(0, 0, 0, 0.7);
+    transform: scale(1.1);
+}
